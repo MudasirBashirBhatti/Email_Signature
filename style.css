@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.parent{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 254, 251);
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.212);
+    margin: 5% auto;
+    position: relative;
+    padding:0.3em 1em;
+    border: 1px solid #00000047;
+}
+.image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+    border: 3px solid rgb(0, 0, 0);
+    position: absolute;
+}
+.image img{
+    width: 100%;
+    /* border-radius: 50%; */
+
+}
+.stripe{
+    position: relative;
+}
+.stripe div{
+    width: 60%;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+.stripe .name{
+color: white;
+text-align: center;
+font-size: 1.6rem;
+line-height: 40px;
+
+
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.text{
+    font-size: 1.3rem;
+}
+.content .address{
+    padding-top: 1em;
+    font-size: 1.2rem;
+}
+.content .address img{
+    width: 20px;
+}
+.content .Contact{
+    padding-top: 1em;
+    font-size: 1.2rem;
+}
+.content .Contact img{
+    width: 20px;
+    transform:rotate(130deg);
+}
+
+.link{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(2,1fr);
+    position: absolute;
+    bottom: 3%;
+    right: -97%;
+    /* flex-direction: column; */
+}
+.link a img{
+    filter:brightness(0);
+    width: 30px;
+    padding: 10px;
+    transform:scale(1);
+}
+.link a img:hover{
+    display: inline-block;
+    filter: brightness(100%);
+    transition: .5s;
+    rotate:720deg;
+    transform: scale(1.5);
+}
+.line{
+    width: 2px;
+    background-color: black;
+    height: 57%;
+    position: absolute;
+    top: 28%;
+    left: 60%;
+}
+
